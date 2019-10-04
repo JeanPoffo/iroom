@@ -10,6 +10,14 @@ public class Postagem {
     private Usuario usuario;
     private List<Imagem> imagens;
 
+    public Postagem(long codigo, String titulo, String descricao) {
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.descricao = descricao;
+    }
+
+    public Postagem() {}
+
     public long getCodigo() {
         return codigo;
     }

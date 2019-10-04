@@ -1,15 +1,18 @@
 package com.br.iroom.view.adapter;
 
 import android.content.Context;
-import android.view.View;
+import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.br.iroom.R;
 import com.br.iroom.model.Postagem;
 
 import java.util.List;
 
-public class PostagemAdapter extends BaseAdapter {
+public class PostagemAdapter extends RecyclerView.Adapter {
 
     private Context context;
 
@@ -20,14 +23,18 @@ public class PostagemAdapter extends BaseAdapter {
         this.postagens = postagens;
     }
 
+    @NonNull
     @Override
-    public int getCount() {
-        return this.postagens.size();
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new PostagemViewHolder(LayoutInflater.from(this.context).inflate(R.layout.activity_postagem_adapter, parent, false));
     }
 
     @Override
-    public Object getItem(int position) {
-        return this.postagens.get(position);
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        PostagemViewHolder postagemViewHolder = (PostagemViewHolder) holder;
+
+        postagemViewHolder.getTextViewTitulo().setText(this.postagens.get(position).getTitulo());
+        postagemViewHolder.getTextViewDescricao().setText(this.postagens.get(position).getDescricao());
     }
 
     @Override
@@ -36,7 +43,7 @@ public class PostagemAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+    public int getItemCount() {
+        return this.postagens != null ? this.postagens.size() : 0;
     }
 }
