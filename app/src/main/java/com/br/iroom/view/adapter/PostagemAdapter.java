@@ -12,6 +12,11 @@ import com.br.iroom.model.Postagem;
 
 import java.util.List;
 
+/**
+ * Classe adapter para o Recycler View de Postagens do Feed
+ * @author Jean Poffo
+ * @since 09/10/2019
+ */
 public class PostagemAdapter extends RecyclerView.Adapter {
 
     private Context context;
@@ -35,6 +40,12 @@ public class PostagemAdapter extends RecyclerView.Adapter {
 
         postagemViewHolder.getTextViewTitulo().setText(this.postagens.get(position).getTitulo());
         postagemViewHolder.getTextViewDescricao().setText(this.postagens.get(position).getDescricao());
+
+        if(!this.postagens.get(position).getImagens().isEmpty()) {
+            postagemViewHolder.getImageView1().setImageBitmap(this.postagens.get(position).getImagens().get(0).getImagem());
+            postagemViewHolder.getImageView2().setImageBitmap(this.postagens.get(position).getImagens().get(1).getImagem());
+            postagemViewHolder.getImageView3().setImageBitmap(this.postagens.get(position).getImagens().get(2).getImagem());
+        }
     }
 
     @Override
@@ -44,6 +55,6 @@ public class PostagemAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
-        return this.postagens != null ? this.postagens.size() : 0;
+        return this.postagens.size();
     }
 }

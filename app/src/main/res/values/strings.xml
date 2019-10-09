@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">IRoom</string>
+    <string name="descricao">Descricao</string>
+    <string name="post">Post</string>
+    <string name="imagem_postagem_1">Primeira imagem da Postagem</string>
+    <string name="imagem_postagem_2">Segunda imagem da Postagem</string>
+    <string name="imagem_postagem_3">Terceira imagem da Postagem</string>
 </resources>

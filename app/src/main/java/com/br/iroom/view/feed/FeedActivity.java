@@ -3,6 +3,7 @@ package com.br.iroom.view.feed;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.br.iroom.R;
@@ -12,6 +13,11 @@ import com.br.iroom.view.adapter.PostagemAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe Activity do Feed de postagens
+ * @author Jean Poffo
+ * @since 09/10/2019
+ */
 public class FeedActivity extends AppCompatActivity {
 
     private RecyclerView recyclerViewPostagens;
@@ -22,6 +28,8 @@ public class FeedActivity extends AppCompatActivity {
         this.setContentView(R.layout.activity_feed);
 
         this.recyclerViewPostagens = findViewById(R.id.recyclerViewPostagens);
+        this.recyclerViewPostagens.setLayoutManager(new LinearLayoutManager(this));
+
         this.testRecyclerViewPost();
     }
 

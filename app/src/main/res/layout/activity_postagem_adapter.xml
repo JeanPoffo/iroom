@@ -2,71 +2,100 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutPostagem"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".view.adapter.PostagemAdapter">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPostagem"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="1dp"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_margin="15dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:layout_height="0dp">
-
-                <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    tools:ignore="NestedWeights"
-                    tools:src="@tools:sample/avatars[0]"
-                    android:contentDescription="Imagem 1 Apartamento" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    tools:src="@tools:sample/avatars[3]"
-                    android:contentDescription="Imagem 2 Apartamento" />
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    tools:src="@tools:sample/avatars[3]"
-                    android:contentDescription="Imagem 2 Apartamento" />
-
-            </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textViewTitulo"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                android:text="TextView" />
+                android:layout_height="18dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/post"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textViewDescricao"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                android:text="TextView" />
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/descricao" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:layout_marginEnd="4dp"
+                        android:contentDescription="@string/imagem_postagem_1"
+                        android:src="@android:color/holo_purple" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/imagem_postagem_2"
+                        android:src="@android:color/holo_blue_dark" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_span="2"
+                        android:contentDescription="@string/imagem_postagem_3"
+                        android:src="@android:color/holo_green_dark" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:tint="#00FFFFFF" />
+            </LinearLayout>
 
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>

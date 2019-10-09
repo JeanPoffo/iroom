@@ -1,7 +1,13 @@
 package com.br.iroom.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe de Modelo de Postagens
+ * @author Jean Poffo
+ * @since 09/10/2019
+ */
 public class Postagem {
 
     private long codigo;
@@ -14,6 +20,7 @@ public class Postagem {
         this.codigo = codigo;
         this.titulo = titulo;
         this.descricao = descricao;
+        this.imagens = new ArrayList<>();
     }
 
     public Postagem() {}

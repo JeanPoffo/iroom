@@ -1,12 +1,33 @@
 package com.br.iroom.model;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+/**
+ * Classe de Modelo de Usuarios
+ * @author Jean Poffo
+ * @since 09/10/2019
+ */
+@Entity
 public class Usuario {
 
+    @PrimaryKey
     private long codigo;
+
+    @ColumnInfo(name = "nome")
     private String nome;
+
+    @ColumnInfo(name = "sobrenome")
     private String sobrenome;
+
+    @ColumnInfo(name = "email")
     private String email;
+
+    @ColumnInfo(name = "telefone")
     private int telefone;
+
+    @ColumnInfo(name = "biografia")
     private String biografia;
 
     public long getCodigo() {

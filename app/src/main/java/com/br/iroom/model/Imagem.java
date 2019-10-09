@@ -1,13 +1,24 @@
 package com.br.iroom.model;
 
-import android.media.Image;
+import android.graphics.Bitmap;
 
+/**
+ * Classe de Modelo das Imagens da Postagem
+ * @author Jean Poffo
+ * @since 09/10/2019
+ */
 public class Imagem {
 
     private long codigo;
     private String descricao;
     private String endereco;
-    private Image imagem;
+    private Bitmap imagem;
+
+    public Imagem(Bitmap imagem) {
+        this.imagem = imagem;
+    }
+
+    public Imagem() {}
 
     public long getCodigo() {
         return codigo;
@@ -33,11 +44,11 @@ public class Imagem {
         this.endereco = endereco;
     }
 
-    public Image getImagem() {
+    public Bitmap getImagem() {
         return imagem;
     }
 
-    public void setImagem(Image imagem) {
+    public void setImagem(Bitmap imagem) {
         this.imagem = imagem;
     }
 }
