@@ -13,7 +13,10 @@ import androidx.room.PrimaryKey;
 public class Usuario {
 
     @PrimaryKey
+    @ColumnInfo(name = "codigo")
     private long codigo;
+
+    private String senha;
 
     @ColumnInfo(name = "nome")
     private String nome;
@@ -36,6 +39,14 @@ public class Usuario {
 
     public void setCodigo(long codigo) {
         this.codigo = codigo;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public String getNome() {

@@ -1,8 +1,6 @@
 package com.br.iroom.model.dao;
 
 import androidx.room.Dao;
-import androidx.room.Delete;
-import androidx.room.Insert;
 import androidx.room.Query;
 
 import com.br.iroom.model.Usuario;
@@ -10,14 +8,14 @@ import com.br.iroom.model.Usuario;
 import java.util.List;
 
 @Dao
-public interface UsuarioDAO {
+public interface UsuarioDAO extends BaseDAO<Usuario> {
+
+    @Query("SELECT * FROM usuario WHERE codigo = :codigo")
+    List<Usuario> get(int codigo);
 
     @Query("SELECT * FROM usuario")
     List<Usuario> getAll();
 
-    @Insert
-    void insertAll(Usuario... usuarios);
-
-    @Delete
-    void delete(Usuario usuario);
+    @Query("SELECT * FROM usuario WHERE email = :email and senha = :senha")
+    Usuario getUsuarioLogin(String email, String senha);
 }

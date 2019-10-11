@@ -5,9 +5,12 @@
       <w>classe</w>
       <w>codigo</w>
       <w>descricao</w>
+      <w>incorreto</w>
       <w>modelo</w>
+      <w>persistencia</w>
       <w>postagem</w>
       <w>postagens</w>
+      <w>senha</w>
       <w>sobrenome</w>
       <w>telefone</w>
       <w>titulo</w>
