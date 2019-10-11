@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".view.adapter.PostagemAdapter"></activity>
+        <activity android:name=".view.adapter.PostagemDetailActivity"></activity>
         <activity android:name=".view.ActivityLogin">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />

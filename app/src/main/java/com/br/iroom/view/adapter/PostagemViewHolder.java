@@ -1,6 +1,7 @@
 package com.br.iroom.view.adapter;
 
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,6 +22,7 @@ class PostagemViewHolder extends RecyclerView.ViewHolder {
     private ImageView imageView1;
     private ImageView imageView2;
     private ImageView imageView3;
+    private ImageButton imageButton;
 
     PostagemViewHolder(@NonNull View view) {
         super(view);
@@ -30,6 +32,7 @@ class PostagemViewHolder extends RecyclerView.ViewHolder {
         this.imageView1        = view.findViewById(R.id.imageView1);
         this.imageView2        = view.findViewById(R.id.imageView2);
         this.imageView3        = view.findViewById(R.id.imageView3);
+        this.imageButton       = view.findViewById(R.id.imageButton);
     }
 
     TextView getTextViewTitulo() {
@@ -51,4 +54,6 @@ class PostagemViewHolder extends RecyclerView.ViewHolder {
     ImageView getImageView3() {
         return imageView3;
     }
+
+    ImageButton getImageButton() { return imageButton; }
 }
