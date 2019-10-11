@@ -5,4 +5,16 @@
     <string name="imagem_postagem_1">Primeira imagem da Postagem</string>
     <string name="imagem_postagem_2">Segunda imagem da Postagem</string>
     <string name="imagem_postagem_3">Terceira imagem da Postagem</string>
+    <string name="nav_header_foto_descricao">Fotinho de Perfil do Amigo</string>
+    <string name="nav_header_titulo">Jean Poffo</string>
+    <string name="nav_header_subtitulo">Sempre a procura de apartamentos para viver em paz</string>
+    <string name="menu_feed">Feed</string>
+    <string name="menu_mensagens">Mensagens</string>
+    <string name="menu_salvos">Salvos</string>
+    <string name="menu_configuracoes">Configurações</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_search">Buscar...</string>
 </resources>

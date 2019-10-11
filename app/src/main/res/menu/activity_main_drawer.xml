@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    tools:context=".view.MainActivity">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_feed"
+            android:icon="@drawable/ic_feed"
+            android:title="@string/menu_feed" />
+        <item
+            android:id="@+id/nav_mensagens"
+            android:icon="@drawable/ic_mensagens"
+            android:title="@string/menu_mensagens" />
+        <item
+            android:id="@+id/nav_salvos"
+            android:icon="@drawable/ic_salvos"
+            android:title="@string/menu_salvos" />
+        <item
+            android:id="@+id/nav_configuracoes"
+            android:icon="@drawable/ic_configuracoes"
+            android:title="@string/menu_configuracoes" />
+    </group>
+
+</menu>

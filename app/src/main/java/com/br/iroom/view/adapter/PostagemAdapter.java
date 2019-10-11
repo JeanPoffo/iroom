@@ -1,7 +1,9 @@
 package com.br.iroom.view.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -37,15 +39,32 @@ public class PostagemAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         PostagemViewHolder postagemViewHolder = (PostagemViewHolder) holder;
+        final Postagem postagem = this.postagens.get(position);
 
-        postagemViewHolder.getTextViewTitulo().setText(this.postagens.get(position).getTitulo());
-        postagemViewHolder.getTextViewDescricao().setText(this.postagens.get(position).getDescricao());
+        postagemViewHolder.getTextViewTitulo().setText(postagem.getTitulo());
+        postagemViewHolder.getTextViewDescricao().setText(postagem.getDescricao());
 
-        if(!this.postagens.get(position).getImagens().isEmpty()) {
-            postagemViewHolder.getImageView1().setImageBitmap(this.postagens.get(position).getImagens().get(0).getImagem());
-            postagemViewHolder.getImageView2().setImageBitmap(this.postagens.get(position).getImagens().get(1).getImagem());
-            postagemViewHolder.getImageView3().setImageBitmap(this.postagens.get(position).getImagens().get(2).getImagem());
+        if(!postagem.getImagens().isEmpty()) {
+            postagemViewHolder.getImageView1().setImageBitmap(postagem.getImagens().get(0).getImagem());
+            postagemViewHolder.getImageView2().setImageBitmap(postagem.getImagens().get(1).getImagem());
+            postagemViewHolder.getImageView3().setImageBitmap(postagem.getImagens().get(2).getImagem());
         }
+
+        postagemViewHolder.getImageButton().setOnClickListener(view -> {
+            Intent intent = new Intent(context, PostagemDetailActivity.class);
+
+            intent.putExtra("titulo", postagem.getTitulo());
+            intent.putExtra("descricao", postagem.getDescricao());
+
+            if(!postagem.getImagens().isEmpty()) {
+                intent.putExtra("imagens", true);
+                intent.putExtra("imagem1", postagem.getImagens().get(0).getImagem());
+                intent.putExtra("imagem2", postagem.getImagens().get(1).getImagem());
+                intent.putExtra("imagem3", postagem.getImagens().get(2).getImagem());
+            }
+
+            context.startActivity(intent);
+        });
     }
 
     @Override

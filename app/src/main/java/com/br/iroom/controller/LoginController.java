@@ -7,7 +7,7 @@ import android.widget.Toast;
 import com.br.iroom.model.Usuario;
 import com.br.iroom.model.dao.Persistence;
 import com.br.iroom.view.LoginActivity;
-import com.br.iroom.view.feed.FeedActivity;
+import com.br.iroom.view.MainActivity;
 
 /**
  * Classe de Controller do Login
@@ -37,7 +37,7 @@ public class LoginController extends ControllerBase {
 
         if(usuarioLogin != null) {
             Toast.makeText(this.activity, "Seja Bem Vindo " + usuarioLogin.getNome(), Toast.LENGTH_LONG).show();
-            this.activity.startActivity(new Intent(this.activity, FeedActivity.class));
+            this.activity.startActivity(new Intent(this.activity, MainActivity.class));
         }
         else {
             Toast.makeText(this.activity, "Login Incorreto", Toast.LENGTH_LONG).show();

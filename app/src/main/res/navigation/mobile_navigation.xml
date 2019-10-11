@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_feed">
+
+    <fragment
+        android:id="@+id/nav_feed"
+        android:name="com.br.iroom.view.fragment.feed.FeedFragment"
+        android:label="@string/menu_feed"
+        tools:layout="@layout/feed_fragment" />
+
+    <fragment
+        android:id="@+id/nav_mensagens"
+        android:name="com.br.iroom.view.fragment.mensagens.MensagensFragment"
+        android:label="@string/menu_mensagens"
+        tools:layout="@layout/mensagens_fragment" />
+
+    <fragment
+        android:id="@+id/nav_salvos"
+        android:name="com.br.iroom.view.fragment.salvos.SalvosFragment"
+        android:label="@string/menu_salvos"
+        tools:layout="@layout/salvos_fragment" />
+
+    <fragment
+        android:id="@+id/nav_configuracoes"
+        android:name="com.br.iroom.view.fragment.configuracoes.ConfiguracoesFragment"
+        android:label="@string/menu_configuracoes"
+        tools:layout="@layout/configuracoes_fragment" />
+
+</navigation>
