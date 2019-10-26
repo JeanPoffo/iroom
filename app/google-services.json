@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "565412762284",
+    "firebase_url": "https://iroom-apartments-divider.firebaseio.com",
+    "project_id": "iroom-apartments-divider",
+    "storage_bucket": "iroom-apartments-divider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565412762284:android:bc407ac63566f3ecc18509",
+        "android_client_info": {
+          "package_name": "com.br.iroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565412762284-tm8fiq6r6njpk6ig077kcnvcmcfl4q4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.br.iroom",
+            "certificate_hash": "f0337976f5bfafa2a15a8d25aad128d55cb39da1"
+          }
+        },
+        {
+          "client_id": "565412762284-h03do7hj1r2b489huhv30tqnj98fg57g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWsvseAqBp6pD_-GiyPRFuGfeRDTXTwEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565412762284-h03do7hj1r2b489huhv30tqnj98fg57g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

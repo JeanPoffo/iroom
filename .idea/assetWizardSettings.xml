@@ -51,7 +51,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="scalingPercent" value="47" />
+                                                <entry key="scalingPercent" value="45" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -63,7 +63,8 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="foregroundImage" value="C:\Users\jeanp\Desktop\search.png" />
+                                      <entry key="foregroundImage" value="C:\Users\jeanp\Desktop\IRoom\logo_bed.png" />
+                                      <entry key="foregroundLayerName" value="ic_logo_bed" />
                                       <entry key="outputName" value="ic_logo_google" />
                                     </map>
                                   </option>
