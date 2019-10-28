@@ -1,38 +1,21 @@
 package com.br.iroom.model;
 
-import androidx.room.ColumnInfo;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-
 /**
  * Classe de Modelo de Usuarios
  * @author Jean Poffo
  * @since 09/10/2019
  */
-@Entity
 public class Usuario {
 
-    @PrimaryKey
-    @ColumnInfo(name = "codigo")
     private long codigo;
-
     private String senha;
-
-    @ColumnInfo(name = "nome")
     private String nome;
-
-    @ColumnInfo(name = "sobrenome")
     private String sobrenome;
-
-    @ColumnInfo(name = "email")
     private String email;
-
-    @ColumnInfo(name = "telefone")
     private int telefone;
-
-    @ColumnInfo(name = "biografia")
     private String biografia;
 
+    // <editor-fold defaultstate="collapsed" desc="Getter and Setters">
     public long getCodigo() {
         return codigo;
     }
@@ -88,4 +71,5 @@ public class Usuario {
     public void setBiografia(String biografia) {
         this.biografia = biografia;
     }
+    // </editor-fold>
 }

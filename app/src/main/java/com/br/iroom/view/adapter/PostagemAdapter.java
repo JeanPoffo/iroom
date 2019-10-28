@@ -3,7 +3,6 @@ package com.br.iroom.view.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -44,23 +43,23 @@ public class PostagemAdapter extends RecyclerView.Adapter {
         postagemViewHolder.getTextViewTitulo().setText(postagem.getTitulo());
         postagemViewHolder.getTextViewDescricao().setText(postagem.getDescricao());
 
-        if(!postagem.getImagens().isEmpty()) {
-            postagemViewHolder.getImageView1().setImageBitmap(postagem.getImagens().get(0).getImagem());
-            postagemViewHolder.getImageView2().setImageBitmap(postagem.getImagens().get(1).getImagem());
-            postagemViewHolder.getImageView3().setImageBitmap(postagem.getImagens().get(2).getImagem());
+        if(!postagem.getImagem().isEmpty()) {
+            postagemViewHolder.getImageView1().setImageBitmap(postagem.getImagem().get(0));
+            postagemViewHolder.getImageView2().setImageBitmap(postagem.getImagem().get(1));
+            postagemViewHolder.getImageView3().setImageBitmap(postagem.getImagem().get(2));
         }
 
-        postagemViewHolder.getImageButton().setOnClickListener(view -> {
+        postagemViewHolder.getCardViewPostagem().setOnClickListener(view -> {
             Intent intent = new Intent(context, PostagemDetailActivity.class);
 
             intent.putExtra("titulo", postagem.getTitulo());
             intent.putExtra("descricao", postagem.getDescricao());
 
-            if(!postagem.getImagens().isEmpty()) {
+            if(!postagem.getImagem().isEmpty()) {
                 intent.putExtra("imagens", true);
-                intent.putExtra("imagem1", postagem.getImagens().get(0).getImagem());
-                intent.putExtra("imagem2", postagem.getImagens().get(1).getImagem());
-                intent.putExtra("imagem3", postagem.getImagens().get(2).getImagem());
+                intent.putExtra("imagem1", postagem.getImagem().get(0));
+                intent.putExtra("imagem2", postagem.getImagem().get(1));
+                intent.putExtra("imagem3", postagem.getImagem().get(2));
             }
 
             context.startActivity(intent);

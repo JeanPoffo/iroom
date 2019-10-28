@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.br.iroom.R;
@@ -17,22 +18,28 @@ import com.br.iroom.R;
  */
 class PostagemViewHolder extends RecyclerView.ViewHolder {
 
+    private CardView cardViewPostagem;
     private TextView textViewTitulo;
     private TextView textViewDescricao;
     private ImageView imageView1;
     private ImageView imageView2;
     private ImageView imageView3;
-    private ImageButton imageButton;
 
     PostagemViewHolder(@NonNull View view) {
         super(view);
 
+        this.cardViewPostagem  = view.findViewById(R.id.cardViewPostagem);
         this.textViewTitulo    = view.findViewById(R.id.textViewTitulo);
         this.textViewDescricao = view.findViewById(R.id.textViewDescricao);
         this.imageView1        = view.findViewById(R.id.imageView1);
         this.imageView2        = view.findViewById(R.id.imageView2);
         this.imageView3        = view.findViewById(R.id.imageView3);
-        this.imageButton       = view.findViewById(R.id.imageButton);
+    }
+
+    // <editor-fold defaultstate="collapsed" desc="Getters">
+
+    CardView getCardViewPostagem() {
+        return cardViewPostagem;
     }
 
     TextView getTextViewTitulo() {
@@ -55,5 +62,5 @@ class PostagemViewHolder extends RecyclerView.ViewHolder {
         return imageView3;
     }
 
-    ImageButton getImageButton() { return imageButton; }
+    // </editor-fold>
 }

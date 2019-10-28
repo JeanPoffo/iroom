@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
                 Toast.makeText(this, "Bem vindo " + firebaseUser.getDisplayName(), Toast.LENGTH_LONG).show();
-                Log.println(0, "Log Usuario", firebaseUser.toString());
+
                 startActivity(new Intent(this, MainActivity.class));
             }
             else {

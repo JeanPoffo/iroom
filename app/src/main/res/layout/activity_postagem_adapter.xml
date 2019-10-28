@@ -79,21 +79,6 @@
 
             </TableLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="#00FFFFFF"
-                    android:src="@drawable/ic_add_black_24dp"
-                    android:tint="#00FFFFFF" />
-            </LinearLayout>
-
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

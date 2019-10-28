@@ -1,5 +1,7 @@
 package com.br.iroom.model;
 
+import android.graphics.Bitmap;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,17 +15,19 @@ public class Postagem {
     private long codigo;
     private String titulo;
     private String descricao;
+    private List<Bitmap> imagem = new ArrayList<>();
+    private Quarto quarto;
     private Usuario usuario;
-    private List<Imagem> imagens;
 
     public Postagem(long codigo, String titulo, String descricao) {
         this.codigo = codigo;
         this.titulo = titulo;
         this.descricao = descricao;
-        this.imagens = new ArrayList<>();
     }
 
     public Postagem() {}
+
+    // <editor-fold defaultstate="collapsed" desc="Getters and Setters">
 
     public long getCodigo() {
         return codigo;
@@ -49,6 +53,22 @@ public class Postagem {
         this.descricao = descricao;
     }
 
+    public List<Bitmap> getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(List<Bitmap> imagem) {
+        this.imagem = imagem;
+    }
+
+    public Quarto getQuarto() {
+        return quarto;
+    }
+
+    public void setQuarto(Quarto quarto) {
+        this.quarto = quarto;
+    }
+
     public Usuario getUsuario() {
         return usuario;
     }
@@ -57,11 +77,5 @@ public class Postagem {
         this.usuario = usuario;
     }
 
-    public List<Imagem> getImagens() {
-        return imagens;
-    }
-
-    public void setImagens(List<Imagem> imagens) {
-        this.imagens = imagens;
-    }
+    // </editor-fold>
 }
