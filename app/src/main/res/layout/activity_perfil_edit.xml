@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".view.PerfilEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <TextView
+            android:id="@+id/textViewEditPerfilNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextEditPerfilNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewEditPerfilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTexteditPerfilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textVieweditPerfilBiografia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biografia:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextEditPerfilBiografia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonEditPerfilSalvar"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/ic_save" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,35 +1,69 @@
 package com.br.iroom.model;
 
+import android.graphics.Bitmap;
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+
+import com.google.firebase.auth.FirebaseUser;
+
+import java.util.Objects;
+
 /**
  * Classe de Modelo de Usuarios
  * @author Jean Poffo
  * @since 09/10/2019
  */
-public class Usuario {
+@Entity
+public class Usuario implements Parcelable {
 
-    private long codigo;
-    private String senha;
+    @PrimaryKey
+    @NonNull
+    @ColumnInfo(name = "token")
+    private String token;
+
+    @ColumnInfo(name = "nome")
     private String nome;
-    private String sobrenome;
+
+    @ColumnInfo(name = "email")
     private String email;
-    private int telefone;
+
+    @ColumnInfo(name = "telefone")
+    private String telefone;
+
+    @ColumnInfo(name = "biografia")
     private String biografia;
 
+    @Ignore
+    private Bitmap fotoPerfil;
+
+    @Ignore
+    private FirebaseUser firebaseUser;
+
+    public Usuario() {}
+
+    @Ignore
+    public Usuario(String nome, String email, String telefone, String biografia) {
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.biografia = biografia;
+    }
+
     // <editor-fold defaultstate="collapsed" desc="Getter and Setters">
-    public long getCodigo() {
-        return codigo;
+
+    @NonNull
+    public String getToken() {
+        return token;
     }
 
-    public void setCodigo(long codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setToken(@NonNull String token) {
+        this.token = token;
     }
 
     public String getNome() {
@@ -40,14 +74,6 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public String getSobrenome() {
-        return sobrenome;
-    }
-
-    public void setSobrenome(String sobrenome) {
-        this.sobrenome = sobrenome;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -56,11 +82,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
@@ -71,5 +97,63 @@ public class Usuario {
     public void setBiografia(String biografia) {
         this.biografia = biografia;
     }
+
+    public Bitmap getFotoPerfil() {
+        return fotoPerfil;
+    }
+
+    public void setFotoPerfil(Bitmap fotoPerfil) {
+        this.fotoPerfil = fotoPerfil;
+    }
+
+    public FirebaseUser getFirebaseUser() {
+        return firebaseUser;
+    }
+
+    public void setFirebaseUser(FirebaseUser firebaseUser) {
+        this.firebaseUser = firebaseUser;
+    }
+    // </editor-fold>
+
+    // <editor-fold defaultstate="collapsed" desc="Parcelable">
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.token);
+        dest.writeString(this.nome);
+        dest.writeString(this.email);
+        dest.writeString(this.telefone);
+        dest.writeString(this.biografia);
+        dest.writeParcelable(this.firebaseUser, flags);
+        dest.writeParcelable(this.fotoPerfil, flags);
+    }
+
+    protected Usuario(Parcel in) {
+        this.token = Objects.requireNonNull(in.readString());
+        this.nome = in.readString();
+        this.email = in.readString();
+        this.telefone = in.readString();
+        this.biografia = in.readString();
+        this.firebaseUser = in.readParcelable(FirebaseUser.class.getClassLoader());
+        this.fotoPerfil = in.readParcelable(Bitmap.class.getClassLoader());
+    }
+
+    public static final Parcelable.Creator<Usuario> CREATOR = new Parcelable.Creator<Usuario>() {
+        @Override
+        public Usuario createFromParcel(Parcel source) {
+            return new Usuario(source);
+        }
+
+        @Override
+        public Usuario[] newArray(int size) {
+            return new Usuario[size];
+        }
+    };
+
     // </editor-fold>
 }

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "565412762284-00r97gemdhel9r567sjtmo6oa6d4ak2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.br.iroom",
+            "certificate_hash": "1a95a9382acff72446b6f3b6061706573c7120ba"
+          }
+        },
+        {
           "client_id": "565412762284-tm8fiq6r6njpk6ig077kcnvcmcfl4q4i.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -1,7 +1,10 @@
 <component name="ProjectDictionaryState">
   <dictionary name="jeanp">
     <words>
+      <w>acao</w>
+      <w>adiciona</w>
       <w>biografia</w>
+      <w>buscar</w>
       <w>classe</w>
       <w>codigo</w>
       <w>configuracoes</w>
@@ -9,6 +12,9 @@
       <w>dados</w>
       <w>defaultstate</w>
       <w>descricao</w>
+      <w>documet</w>
+      <w>edição</w>
+      <w>entidade</w>
       <w>foto</w>
       <w>imagem</w>
       <w>imagens</w>
@@ -21,6 +27,7 @@
       <w>postagem</w>
       <w>postagens</w>
       <w>quantidade</w>
+      <w>salvar</w>
       <w>senha</w>
       <w>sobrenome</w>
       <w>subtitulo</w>
@@ -28,6 +35,8 @@
       <w>titulo</w>
       <w>usuario</w>
       <w>usuarios</w>
+      <w>usuário</w>
+      <w>verificar</w>
     </words>
   </dictionary>
 </component>

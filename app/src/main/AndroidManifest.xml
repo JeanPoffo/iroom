@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".view.FiltroActivity"></activity>
+        <activity android:name=".view.PerfilEditActivity" />
         <activity android:name=".view.LoginActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -20,15 +22,11 @@
         <activity
             android:name=".view.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
-            <meta-data
-                android:name="android.app.searchable"
-                android:resource="@menu/searchable" />
-        </activity>
-        <activity android:name=".view.adapter.PostagemDetailActivity" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.PerfilActivity" />
+        <activity
+            android:name=".view.PostagemDetailActivity"
+            android:theme="@style/AppTheme.ActionBar" />
     </application>
 
 </manifest>

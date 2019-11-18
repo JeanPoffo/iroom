@@ -2,6 +2,4 @@ package com.br.iroom.view.fragment.feed;
 
 import androidx.lifecycle.ViewModel;
 
-public class FeedViewModel extends ViewModel {
-    /** N tenho ideia */
-}
+public class FeedViewModel extends ViewModel {}

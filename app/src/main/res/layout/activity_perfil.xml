@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".view.PerfilActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        tools:srcCompat="@tools:sample/avatars[6]" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textVieweditPerfilBiografia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Cara"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Endereço do Cara"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="Descrição" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonAdicionarQuarto"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/ic_local_hotel" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEditarPerfil"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/ic_edit" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -2,19 +2,21 @@ package com.br.iroom.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.br.iroom.R;
+import com.br.iroom.core.Core;
 import com.firebase.ui.auth.AuthUI;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Classe de Main Activity da Aplicação
+ * @author Jean Poffo
+ */
 public class LoginActivity extends AppCompatActivity {
 
     @Override
@@ -41,11 +43,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == 1) {
-            //IdpResponse response = IdpResponse.fromResultIntent(data);
-
             if (resultCode == RESULT_OK) {
-                FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-                Toast.makeText(this, "Bem vindo " + firebaseUser.getDisplayName(), Toast.LENGTH_LONG).show();
+                Core.getInstance().init(this.getApplicationContext());
+
+                Toast.makeText(this, "Bem Vindo " + Core.getInstance().getUsuario().getNome(), Toast.LENGTH_LONG).show();
 
                 startActivity(new Intent(this, MainActivity.class));
             }

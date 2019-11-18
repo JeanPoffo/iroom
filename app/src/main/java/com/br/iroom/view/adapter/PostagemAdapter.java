@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.br.iroom.R;
 import com.br.iroom.model.Postagem;
+import com.br.iroom.view.PostagemDetailActivity;
 
 import java.util.List;
 
@@ -52,15 +53,7 @@ public class PostagemAdapter extends RecyclerView.Adapter {
         postagemViewHolder.getCardViewPostagem().setOnClickListener(view -> {
             Intent intent = new Intent(context, PostagemDetailActivity.class);
 
-            intent.putExtra("titulo", postagem.getTitulo());
-            intent.putExtra("descricao", postagem.getDescricao());
-
-            if(!postagem.getImagem().isEmpty()) {
-                intent.putExtra("imagens", true);
-                intent.putExtra("imagem1", postagem.getImagem().get(0));
-                intent.putExtra("imagem2", postagem.getImagem().get(1));
-                intent.putExtra("imagem3", postagem.getImagem().get(2));
-            }
+            intent.putExtra("postagem", postagem);
 
             context.startActivity(intent);
         });

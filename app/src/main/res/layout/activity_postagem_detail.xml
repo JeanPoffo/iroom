@@ -3,66 +3,76 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    android:padding="10dp">
-
-    <TextView
-        android:id="@+id/textViewTitulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:text="@string/post"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textViewDescricao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:text="@string/descricao" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginTop="4dp"
-        android:layout_span="2"
-        android:contentDescription="@string/imagem_postagem_3"
-        android:src="@android:color/holo_purple" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginTop="4dp"
-        android:layout_span="2"
-        android:contentDescription="@string/imagem_postagem_3"
-        android:src="@android:color/holo_blue_dark" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginTop="4dp"
-        android:layout_span="2"
-        android:contentDescription="@string/imagem_postagem_3"
-        android:src="@android:color/holo_green_dark" />
+    android:background="@color/colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/imageButtonClose"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/ic_add_black_24dp"
-            android:rotation="45"
-            android:tint="#00FFFFFF" />
+            android:layout_marginBottom="10dp"
+            android:text="@string/post"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/descricao" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/imagem_postagem_1"
+            android:paddingBottom="10dp"
+            android:src="@android:color/holo_purple" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/imagem_postagem_2"
+            android:paddingBottom="10dp"
+            android:src="@android:color/holo_blue_dark" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/imagem_postagem_3"
+            android:src="@android:color/holo_green_dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavorite"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/ic_bookmark"
+                android:tint="#00FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/imageButtonMessage"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/ic_message"
+                android:tint="#00FFFFFF" />
+        </RelativeLayout>
 
     </LinearLayout>
 
