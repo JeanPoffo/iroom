@@ -3,4 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragment.salvos.SalvosFragment"/>
+    tools:context=".view.fragment.salvos.SalvosFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSalvos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            tools:listitem="@layout/activity_salvo_adapter"/>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

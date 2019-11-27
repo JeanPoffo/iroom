@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".view.adapter.SalvoAdapter">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSalvo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewSalvo"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:src="@android:color/holo_purple" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewTituloSalvo"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/post"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewDescricaoSalvo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/descricao" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

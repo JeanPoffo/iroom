@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.br.iroom.R;
+import com.br.iroom.core.Testes;
 import com.br.iroom.model.Postagem;
 import com.br.iroom.view.adapter.PostagemAdapter;
 
@@ -42,7 +43,7 @@ public class FeedFragment extends Fragment {
         this.recyclerViewPostagens = view.findViewById(R.id.recyclerViewPostagens);
         this.recyclerViewPostagens.setLayoutManager(new LinearLayoutManager(this.getContext()));
 
-        this.testRecyclerViewPost();
+        this.recyclerViewPostagens.setAdapter(new PostagemAdapter(this.getContext(), Testes.getInstance().getListPostagemFeed()));
 
         return view;
     }
@@ -52,14 +53,5 @@ public class FeedFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         viewModel = ViewModelProviders.of(this).get(FeedViewModel.class);
-    }
-
-    private void testRecyclerViewPost() {
-        List<Postagem> postagens = new ArrayList<>();
-        postagens.add(new Postagem(1, "Apartamento Beira Mar", "Apartamento localizado proximo ao mar"));
-        postagens.add(new Postagem(2, "Apartamento Na Ladeira", "Barato pra um caramba"));
-        postagens.add(new Postagem(3, "Divido apartamento 6 quartos", "Apartamento com custo baixissimo, 4 vagas disponiveis"));
-
-        this.recyclerViewPostagens.setAdapter(new PostagemAdapter(this.getContext(), postagens));
     }
 }

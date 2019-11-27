@@ -7,18 +7,25 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.br.iroom.R;
+import com.br.iroom.core.Testes;
+import com.br.iroom.view.adapter.SalvoAdapter;
+import com.br.iroom.view.adapter.SalvoViewHolder;
 
 /**
  * Classe Fragment do Menu de Salvos
  * @author Jean Poffo
  */
 public class SalvosFragment extends Fragment {
+
+    private RecyclerView recyclerViewSalvos;
 
     private SalvosViewModel viewModel;
 
@@ -28,7 +35,14 @@ public class SalvosFragment extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.salvos_fragment, container, false);
+        View view = inflater.inflate(R.layout.salvos_fragment, container, false);
+
+        this.recyclerViewSalvos = view.findViewById(R.id.recyclerViewSalvos);
+        this.recyclerViewSalvos.setLayoutManager(new LinearLayoutManager(this.getContext()));
+
+        this.recyclerViewSalvos.setAdapter(new SalvoAdapter(this.getContext(), Testes.getInstance().getListPostagemSalvo()));
+
+        return view;
     }
 
     @Override

@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements BindDataView {
         this.setupNavigationView();
 
         this.controller = new ControllerMain(this);
+
+        startActivity(new Intent(this.getApplicationContext(), FiltroActivity.class));
     }
 
     private void setupAppBar() {
@@ -97,7 +99,9 @@ public class MainActivity extends AppCompatActivity implements BindDataView {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if(item.getItemId() == R.id.action_item_buscar) {
-            startActivity(new Intent(this.getBaseContext(), FiltroActivity.class));
+            startActivity(new Intent(this.getApplicationContext(), FiltroActivity.class));
+
+            return false;
         }
 
         return super.onOptionsItemSelected(item);

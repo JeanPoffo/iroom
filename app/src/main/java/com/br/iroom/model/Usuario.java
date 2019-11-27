@@ -12,8 +12,6 @@ import androidx.room.PrimaryKey;
 
 import com.google.firebase.auth.FirebaseUser;
 
-import java.util.Objects;
-
 /**
  * Classe de Modelo de Usuarios
  * @author Jean Poffo
@@ -134,7 +132,7 @@ public class Usuario implements Parcelable {
     }
 
     protected Usuario(Parcel in) {
-        this.token = Objects.requireNonNull(in.readString());
+        this.token = in.readString();
         this.nome = in.readString();
         this.email = in.readString();
         this.telefone = in.readString();
