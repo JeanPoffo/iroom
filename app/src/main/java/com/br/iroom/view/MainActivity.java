@@ -122,9 +122,6 @@ public class MainActivity extends AppCompatActivity implements BindDataView {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == ADICIONAR_REQUEST_CODE && resultCode == RESULT_OK) {
             RecyclerView recyclerViewPostagens = findViewById(R.id.recyclerViewPostagens);
-            try {
-                recyclerViewPostagens.getAdapter().notifyDataSetChanged();
-            } catch(Exception e) {}
         }
     }
 
