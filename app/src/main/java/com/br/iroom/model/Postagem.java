@@ -93,9 +93,13 @@ public class Postagem implements Parcelable {
         return quarto;
     }
 
+    public boolean hasQuarto() { return this.getQuarto() != null; }
+
     public void setQuarto(Quarto quarto) {
         this.quarto = quarto;
     }
+
+    public void resetQuarto() { this.setQuarto(new Quarto()); }
 
     public Usuario getUsuario() {
         return usuario;

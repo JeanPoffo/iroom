@@ -5,10 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
+    <!-- Adicionar Postagem -->
+    <item
+        android:id="@+id/action_item_adicionar"
+        android:icon="@drawable/ic_add"
+        android:title="Adicionar"
+        app:showAsAction="always"/>
+
+    <!-- Buscar Postagem -->
     <item
         android:id="@+id/action_item_buscar"
         android:icon="@drawable/ic_search"
-        android:orderInCategory="100"
         app:showAsAction="always"
         android:title="Buscar" />
 
