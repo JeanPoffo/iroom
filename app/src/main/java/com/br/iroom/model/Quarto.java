@@ -29,10 +29,10 @@ public class Quarto implements Parcelable {
     private int quantidadeSuite;
 
     @ColumnInfo(name = "latitude")
-    private long latitude;
+    private double latitude;
 
     @ColumnInfo(name = "longitude")
-    private long longitude;
+    private double longitude;
 
     @Ignore
     public Quarto(long codigo, int quantidadeQuarto, int quantidadeSuite) {
@@ -69,19 +69,19 @@ public class Quarto implements Parcelable {
         this.quantidadeSuite = quantidadeSuite;
     }
 
-    public long getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(long latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
-    public long getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(long longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 
@@ -99,16 +99,16 @@ public class Quarto implements Parcelable {
         dest.writeLong(this.codigo);
         dest.writeInt(this.quantidadeQuarto);
         dest.writeInt(this.quantidadeSuite);
-        dest.writeLong(this.latitude);
-        dest.writeLong(this.longitude);
+        dest.writeDouble(this.latitude);
+        dest.writeDouble(this.longitude);
     }
 
     protected Quarto(Parcel in) {
         this.codigo = in.readLong();
         this.quantidadeQuarto = in.readInt();
         this.quantidadeSuite = in.readInt();
-        this.latitude = in.readLong();
-        this.longitude = in.readLong();
+        this.latitude = in.readDouble();
+        this.longitude = in.readDouble();
     }
 
     public static final Creator<Quarto> CREATOR = new Creator<Quarto>() {

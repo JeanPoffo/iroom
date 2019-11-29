@@ -15,12 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.br.iroom.R;
-import com.br.iroom.core.Testes;
-import com.br.iroom.model.Postagem;
+import com.br.iroom.core.LocalDatabase;
 import com.br.iroom.view.adapter.PostagemAdapter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Classe Fragment do Menu de Feed
@@ -43,7 +39,7 @@ public class FeedFragment extends Fragment {
         this.recyclerViewPostagens = view.findViewById(R.id.recyclerViewPostagens);
         this.recyclerViewPostagens.setLayoutManager(new LinearLayoutManager(this.getContext()));
 
-        this.recyclerViewPostagens.setAdapter(new PostagemAdapter(this.getContext(), Testes.getInstance().getListPostagemFeed()));
+        this.recyclerViewPostagens.setAdapter(new PostagemAdapter(this.getContext(), LocalDatabase.getInstance().getListPostagemFeed()));
 
         return view;
     }
