@@ -39,9 +39,13 @@ public class FeedFragment extends Fragment {
         this.recyclerViewPostagens = view.findViewById(R.id.recyclerViewPostagens);
         this.recyclerViewPostagens.setLayoutManager(new LinearLayoutManager(this.getContext()));
 
+<<<<<<< HEAD
         PostagemAdapter postagemAdapter = new PostagemAdapter(this.getContext(), LocalDatabase.getInstance().getListPostagemFeed());
         LocalDatabase.getInstance().addObserverPostagem(postagemAdapter);
         this.recyclerViewPostagens.setAdapter(postagemAdapter);
+=======
+        this.recyclerViewPostagens.setAdapter(new PostagemAdapter(this.getContext(), LocalDatabase.getInstance().getListPostagemFeed()));
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
 
         return view;
     }

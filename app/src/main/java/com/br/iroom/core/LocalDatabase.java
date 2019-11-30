@@ -1,5 +1,6 @@
 package com.br.iroom.core;
 
+<<<<<<< HEAD
 import com.br.iroom.model.Filtro;
 import com.br.iroom.model.Postagem;
 import com.br.iroom.model.Salvo;
@@ -8,6 +9,12 @@ import com.br.iroom.view.adapter.PostagemAdapter;
 import com.br.iroom.view.adapter.SalvoAdapter;
 
 import java.util.AbstractQueue;
+=======
+import com.br.iroom.model.Postagem;
+import com.br.iroom.model.Salvo;
+import com.br.iroom.model.Usuario;
+
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,11 +30,14 @@ public class LocalDatabase {
 
     private List<Salvo> salvos;
 
+<<<<<<< HEAD
     private List<ObserverPostagem> observersPostagem;
     private List<ObserverSalvo> observersSalvo;
     private List<ObserverUsuario> observersUsuario;
     private Filtro filtro;
 
+=======
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
     public static synchronized LocalDatabase getInstance() {
         if(instance == null) {
             instance = new LocalDatabase();
@@ -36,6 +46,7 @@ public class LocalDatabase {
     }
 
     private LocalDatabase() {
+<<<<<<< HEAD
         this.usuarioAtual      = Core.getInstance().getUsuario();
         this.usuarioConvidado  = new Usuario("Eloísa Bazzanella", "eloisa.bazzanella@gmail.com", "47-998521403", "Adora matemática");
         this.postagens         = initPostagens();
@@ -59,6 +70,16 @@ public class LocalDatabase {
             postsFiltro.add(postagem);
         }
         return postsFiltro;
+=======
+        this.usuarioAtual     = Core.getInstance().getUsuario();
+        this.usuarioConvidado = new Usuario("Eloísa Bazzanella", "eloisa.bazzanella@gmail.com", "47-998521403", "Adora matemática");
+        this.postagens        = initPostagens();
+        this.salvos           = initSalvos();
+    }
+
+    public List<Postagem> getListPostagemFeed() {
+        return postagens;
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
     }
 
     public List<Salvo> getListPostagemSalvo() {
@@ -74,7 +95,10 @@ public class LocalDatabase {
     public synchronized void addPostagem(Postagem postagem) {
         postagem.setCodigo(nextCodigoPostagem());
         postagens.add(postagem);
+<<<<<<< HEAD
         notifyUpdatePostagens();
+=======
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
     }
 
     private List<Postagem> initPostagens() {
@@ -104,7 +128,10 @@ public class LocalDatabase {
         int indice = salvos.indexOf(salvo);
         if(indice >= 0) {
             salvos.remove(indice);
+<<<<<<< HEAD
             notifyUpdateSalvos();
+=======
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
         }
     }
 
@@ -114,6 +141,7 @@ public class LocalDatabase {
         salvo.setPostagem(postagem);
         salvo.setUsuario(this.usuarioAtual);
         salvos.add(salvo);
+<<<<<<< HEAD
         notifyUpdateSalvos();
     }
 
@@ -125,6 +153,8 @@ public class LocalDatabase {
     public void updateFiltro(Filtro filtro) {
         this.filtro = filtro;
         notifyUpdatePostagens();
+=======
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
     }
 
     private Long nextCodigoPostagem() {
@@ -146,6 +176,7 @@ public class LocalDatabase {
         }
         return codigo + 1;
     }
+<<<<<<< HEAD
 
     private void notifyUpdatePostagens() {
         List<Postagem> postagens = this.getListPostagemFeed();
@@ -182,4 +213,6 @@ public class LocalDatabase {
     public Filtro getFiltro() {
         return filtro;
     }
+=======
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
 }

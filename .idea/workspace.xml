@@ -10,16 +10,19 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e361f40e-0ca0-4d8e-97f9-1916c9605ab2" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;app/src/main/java/com/br/iroom/core/LocalDatabase.java&#10;#&#9;app/src/main/java/com/br/iroom/model/Quarto.java&#10;#&#9;app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/FiltroActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/MainActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/fragment/feed/FeedFragment.java&#10;#&#9;app/src/main/java/com/br/iroom/view/fragment/salvos/SalvosFragment.java&#10;#&#9;app/src/main/res/layout/activity_adicionar_postagem.xml&#10;#&#9;app/src/main/res/layout/activity_postagem_detail.xml&#10;#&#9;app/src/main/res/menu/menu_action_bar.xml">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e361f40e-0ca0-4d8e-97f9-1916c9605ab2" name="Default Changelist" comment="Last updates">
+      <change afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/core/LocalDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/core/LocalDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Quarto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Quarto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/FiltroActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/FiltroActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/fragment/feed/FeedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/fragment/feed/FeedFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/fragment/salvos/SalvosFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/fragment/salvos/SalvosFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_adicionar_postagem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_adicionar_postagem.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_postagem_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_postagem_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_action_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_action_bar.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,14 +43,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
+            <state relative-caret-position="136">
               <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
-                <element signature="method#bindDataFromModel#0;class#MainActivity#0" />
+                <element signature="e#1300#1356#0" expanded="true" />
+                <element signature="e#1413#1414#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+                <element signature="e#1510#1511#0" expanded="true" />
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1600#1601#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+                <element signature="e#1695#1696#0" expanded="true" />
+                <element signature="e#1742#1743#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+              <folding>
+                <element signature="e#1184#1240#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/FiltroActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Postagem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -145,16 +198,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/controller/ControllerEditPerfil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/core/ObserverUsuario.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/controller/ControllerPerfil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Quarto.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_postagem_detail.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Filtro.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/FiltroActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/controller/ControllerFiltro.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/core/LocalDatabase.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_adicionar_postagem.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Quarto.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/FiltroActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java" />
       </list>
     </option>
   </component>
@@ -181,11 +234,6 @@
             <path>
               <item name="iroom" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="iroom" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
               <item name="iroom" type="1abcf292:AndroidViewProjectNode" />
@@ -556,6 +604,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49944258" visible="true" weight="0.20196672" />
@@ -566,18 +615,18 @@
       <window_info id="Resources Explorer" order="6" weight="0.32980332" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49520257" weight="0.396072" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49840087" weight="0.7670011" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49840087" weight="0.7659575" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49840087" weight="0.32998884" />
       <window_info anchor="bottom" id="Android Profiler" order="3" sideWeight="0.49946696" weight="0.32998884" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.32998884" />
-      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.49946696" weight="0.32998884" />
+      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.49946696" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.096066564" side_tool="true" weight="0.33387887" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.68759453" visible="true" weight="0.3633388" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.68759453" weight="0.3633388" />
       <window_info anchor="bottom" id="Build" order="9" sideWeight="0.9039334" weight="0.21440262" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32998884" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -637,6 +686,18 @@
     <MESSAGE value="Last updates" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;app/src/main/java/com/br/iroom/core/LocalDatabase.java&#10;#&#9;app/src/main/java/com/br/iroom/model/Quarto.java&#10;#&#9;app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/FiltroActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/MainActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/fragment/feed/FeedFragment.java&#10;#&#9;app/src/main/java/com/br/iroom/view/fragment/salvos/SalvosFragment.java&#10;#&#9;app/src/main/res/layout/activity_adicionar_postagem.xml&#10;#&#9;app/src/main/res/layout/activity_postagem_detail.xml&#10;#&#9;app/src/main/res/menu/menu_action_bar.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;app/src/main/java/com/br/iroom/core/LocalDatabase.java&#10;#&#9;app/src/main/java/com/br/iroom/model/Quarto.java&#10;#&#9;app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/FiltroActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/MainActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java&#10;#&#9;app/src/main/java/com/br/iroom/view/fragment/feed/FeedFragment.java&#10;#&#9;app/src/main/java/com/br/iroom/view/fragment/salvos/SalvosFragment.java&#10;#&#9;app/src/main/res/layout/activity_adicionar_postagem.xml&#10;#&#9;app/src/main/res/layout/activity_postagem_detail.xml&#10;#&#9;app/src/main/res/menu/menu_action_bar.xml" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -847,13 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Postagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_postagem_detail.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -931,13 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/FiltroActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/controller/ControllerMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -972,13 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_adicionar_postagem.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -1002,43 +1042,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="e#1114#1170#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/core/LocalDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Quarto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="98" column="21" lean-forward="true" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
-          <folding>
-            <element signature="e#2001#2002#0" expanded="true" />
-            <element signature="e#2029#2030#0" expanded="true" />
-            <element signature="e#2071#2072#0" expanded="true" />
-            <element signature="e#2105#2106#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1049,13 +1056,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Quarto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="121" column="31" lean-forward="true" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2105#2106#0" expanded="true" />
+            <element signature="e#3173#3174#0" expanded="true" />
+            <element signature="e#3222#3223#0" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/model/Postagem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/AdicionarPostagemActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+          <folding>
+            <element signature="e#1184#1240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/FiltroActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
+        <state relative-caret-position="136">
           <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
-            <element signature="method#bindDataFromModel#0;class#MainActivity#0" />
+            <element signature="e#1300#1356#0" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/br/iroom/view/PostagemDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
         </state>
       </provider>
     </entry>

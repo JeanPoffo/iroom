@@ -74,5 +74,11 @@ public class FiltroActivity extends FragmentActivity implements BindDataView {
         this.editTextFiltroLocal.setText(filtro.getLocal());
         this.map.setLatitude(filtro.getLatitude());
         this.map.setLongitude(filtro.getLongitude());
+
+        this.map = new UdescIbiramaInitialGoogleMap();
+
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this.map);
     }
 }

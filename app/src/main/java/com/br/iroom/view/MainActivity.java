@@ -31,6 +31,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
  */
 public class MainActivity extends AppCompatActivity implements BindDataView {
 
+    private static final int ADICIONAR_REQUEST_CODE = 10;
+
     private AppBarConfiguration appBarConfiguration;
     private CircleImageView imageViewFotoPerfil;
     private TextView textViewNomeUsuario;
@@ -105,7 +107,6 @@ public class MainActivity extends AppCompatActivity implements BindDataView {
             case R.id.action_item_buscar:
                 startActivity(new Intent(this.getApplicationContext(), FiltroActivity.class));
                 return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }

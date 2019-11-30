@@ -39,9 +39,13 @@ public class SalvosFragment extends Fragment {
         this.recyclerViewSalvos = view.findViewById(R.id.recyclerViewSalvos);
         this.recyclerViewSalvos.setLayoutManager(new LinearLayoutManager(this.getContext()));
 
+<<<<<<< HEAD
         SalvoAdapter salvoAdapter = new SalvoAdapter(this.getContext(), LocalDatabase.getInstance().getListPostagemSalvo());
         LocalDatabase.getInstance().addSalvoObserver(salvoAdapter);
         this.recyclerViewSalvos.setAdapter(salvoAdapter);
+=======
+        this.recyclerViewSalvos.setAdapter(new SalvoAdapter(this.getContext(), LocalDatabase.getInstance().getListPostagemSalvo()));
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
 
         return view;
     }

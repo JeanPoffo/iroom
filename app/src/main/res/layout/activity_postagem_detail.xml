@@ -40,6 +40,7 @@
             android:layout_marginBottom="15dp"
             android:text="Quantidade de Suítes" />
 
+<<<<<<< HEAD
         <TextView
             android:id="@+id/textViewPreco"
             android:layout_width="match_parent"
@@ -47,6 +48,8 @@
             android:layout_marginBottom="15dp"
             android:text="Preço" />
 
+=======
+>>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
