@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.br.iroom.R;
+import com.br.iroom.core.ObserverPostagem;
 import com.br.iroom.model.Postagem;
 import com.br.iroom.view.PostagemDetailActivity;
 
@@ -19,7 +20,7 @@ import java.util.List;
  * @author Jean Poffo
  * @since 09/10/2019
  */
-public class PostagemAdapter extends RecyclerView.Adapter {
+public class PostagemAdapter extends RecyclerView.Adapter implements ObserverPostagem {
 
     private Context context;
 
@@ -67,5 +68,11 @@ public class PostagemAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemCount() {
         return this.postagens.size();
+    }
+
+    @Override
+    public void updatePostagens(List<Postagem> postagens) {
+        this.postagens = postagens;
+        notifyDataSetChanged();
     }
 }

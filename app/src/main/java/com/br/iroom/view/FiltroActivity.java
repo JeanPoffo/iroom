@@ -1,15 +1,16 @@
 package com.br.iroom.view;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.util.AttributeSet;
-import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.SeekBar;
 
 import com.br.iroom.R;
+import com.br.iroom.controller.ControllerFiltro;
+import com.br.iroom.model.Filtro;
+import com.br.iroom.view.maps.UdescIbiramaInitialGoogleMap;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -21,34 +22,57 @@ import com.google.android.gms.maps.model.MarkerOptions;
  * Classe de Activity da Tela de Filtros
  * @author Jean Poffo
  */
-public class FiltroActivity extends AppCompatActivity implements OnMapReadyCallback {
+public class FiltroActivity extends FragmentActivity implements BindDataView {
 
-    private GoogleMap googleMap;
+    private ImageButton imageButtonFiltro;
+    private EditText editTextFiltroPalavraChave;
+    private EditText editTextFiltroLocal;
+    private SeekBar seekBarFiltroPreco;
+
+    private UdescIbiramaInitialGoogleMap map;
+
+    private ControllerFiltro controller;
+
+    // <editor-fold defaultstate="collapsed" desc="Getters">
+
+    public ImageButton getImageButtonFiltro() { return imageButtonFiltro; }
+
+    // </editor-fold>
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filtro);
+
+        this.imageButtonFiltro = findViewById(R.id.imageButtonFiltro);
+        this.editTextFiltroPalavraChave = findViewById(R.id.editTextFiltroPalavraChave);
+        this.editTextFiltroLocal = findViewById(R.id.editTextFiltroLocal);
+        this.seekBarFiltroPreco = findViewById(R.id.seekBarFiltroPreco);
+
+        this.map = new UdescIbiramaInitialGoogleMap();
+
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this.map);
+
+        this.controller = new ControllerFiltro(this);
     }
 
-    @Nullable
     @Override
-    public View onCreateView(@Nullable View parent, @NonNull String name, @NonNull Context context, @NonNull AttributeSet attrs) {
-        SupportMapFragment mapFragment = (SupportMapFragment) this.getSupportFragmentManager().findFragmentById(R.id.map);
-
-        if(mapFragment != null) {
-            mapFragment.getMapAsync(this);
-        }
-
-        return parent;
+    public void bindDataToModel(Object entidade) {
+        Filtro filtro = (Filtro) entidade;
+        filtro.setPalavraChave(this.editTextFiltroPalavraChave.getText().toString());
+        filtro.setLatitude(this.map.getLatitude());
+        filtro.setLongitude(this.map.getLongitude());
+        filtro.setLocal(this.editTextFiltroLocal.getText().toString());
     }
 
     @Override
-    public void onMapReady(GoogleMap googleMap) {
-        this.googleMap = googleMap;
-
-        LatLng sydney = new LatLng(-34, 151);
-        this.googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        this.googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    public void bindDataFromModel(Object entidade) {
+        Filtro filtro = (Filtro) entidade;
+        this.editTextFiltroPalavraChave.setText(filtro.getPalavraChave());
+        this.editTextFiltroLocal.setText(filtro.getLocal());
+        this.map.setLatitude(filtro.getLatitude());
+        this.map.setLongitude(filtro.getLongitude());
     }
 }

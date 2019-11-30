@@ -2,16 +2,20 @@ package com.br.iroom.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.br.iroom.R;
 import com.br.iroom.controller.ControllerBaseActivity;
@@ -63,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements BindDataView {
 
         this.controller = new ControllerMain(this);
 
-        startActivity(new Intent(this.getApplicationContext(), FiltroActivity.class));
+//        startActivity(new Intent(this.getApplicationContext(), FiltroActivity.class));
     }
 
     private void setupAppBar() {
@@ -97,14 +101,14 @@ public class MainActivity extends AppCompatActivity implements BindDataView {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_item_buscar:
+                startActivity(new Intent(this.getApplicationContext(), FiltroActivity.class));
+                return true;
 
-        if(item.getItemId() == R.id.action_item_buscar) {
-            startActivity(new Intent(this.getApplicationContext(), FiltroActivity.class));
-
-            return false;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-        return super.onOptionsItemSelected(item);
     }
 
     @Override

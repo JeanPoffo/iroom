@@ -2,11 +2,9 @@ package com.br.iroom.controller;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.view.MenuItem;
 import android.view.View;
 
 import com.br.iroom.core.Core;
-import com.br.iroom.view.FiltroActivity;
 import com.br.iroom.view.MainActivity;
 import com.br.iroom.view.PerfilActivity;
 

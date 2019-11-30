@@ -26,10 +26,31 @@
             android:layout_marginBottom="15dp"
             android:text="@string/descricao" />
 
+        <TextView
+            android:id="@+id/textViewQuantidadeQuartos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Quantidade de Quartos" />
+
+        <TextView
+            android:id="@+id/textViewQuantidadeSuites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Quantidade de Suítes" />
+
+        <TextView
+            android:id="@+id/textViewPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Preço" />
+
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/imagem_postagem_1"
             android:paddingBottom="10dp"
             android:src="@android:color/holo_purple" />
@@ -37,7 +58,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/imagem_postagem_2"
             android:paddingBottom="10dp"
             android:src="@android:color/holo_blue_dark" />
@@ -45,7 +66,7 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/imagem_postagem_3"
             android:src="@android:color/holo_green_dark" />
 

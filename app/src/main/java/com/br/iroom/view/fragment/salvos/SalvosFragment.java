@@ -15,9 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.br.iroom.R;
-import com.br.iroom.core.Testes;
+import com.br.iroom.core.LocalDatabase;
 import com.br.iroom.view.adapter.SalvoAdapter;
-import com.br.iroom.view.adapter.SalvoViewHolder;
 
 /**
  * Classe Fragment do Menu de Salvos
@@ -40,7 +39,9 @@ public class SalvosFragment extends Fragment {
         this.recyclerViewSalvos = view.findViewById(R.id.recyclerViewSalvos);
         this.recyclerViewSalvos.setLayoutManager(new LinearLayoutManager(this.getContext()));
 
-        this.recyclerViewSalvos.setAdapter(new SalvoAdapter(this.getContext(), Testes.getInstance().getListPostagemSalvo()));
+        SalvoAdapter salvoAdapter = new SalvoAdapter(this.getContext(), LocalDatabase.getInstance().getListPostagemSalvo());
+        LocalDatabase.getInstance().addSalvoObserver(salvoAdapter);
+        this.recyclerViewSalvos.setAdapter(salvoAdapter);
 
         return view;
     }

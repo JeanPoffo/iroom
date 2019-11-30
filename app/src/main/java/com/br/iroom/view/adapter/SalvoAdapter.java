@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.br.iroom.R;
+import com.br.iroom.core.ObserverSalvo;
 import com.br.iroom.model.Salvo;
 import com.br.iroom.view.PostagemDetailActivity;
 
@@ -18,7 +19,7 @@ import java.util.List;
  * Classe de Adapter de Itens Salvos
  * @author Jean Poffo
  */
-public class SalvoAdapter extends RecyclerView.Adapter {
+public class SalvoAdapter extends RecyclerView.Adapter implements ObserverSalvo {
 
     private Context context;
 
@@ -59,5 +60,11 @@ public class SalvoAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemCount() {
         return this.salvos.size();
+    }
+
+    @Override
+    public void updateSalvos(List<Salvo> salvos) {
+        this.salvos = salvos;
+        notifyDataSetChanged();
     }
 }

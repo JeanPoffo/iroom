@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.android:facebook-marketing:4.41.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/28f32ee5d5d353ebace3ae60a9f81af9/jetified-facebook-marketing-4.41.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/28f32ee5d5d353ebace3ae60a9f81af9/jetified-facebook-marketing-4.41.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/138987c3c10960826427dcb9145aa7e6/jetified-facebook-marketing-4.41.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/138987c3c10960826427dcb9145aa7e6/jetified-facebook-marketing-4.41.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-marketing/4.41.0/12a673fa75afbaefa5cf55932695847c3181f5af/facebook-marketing-4.41.0-javadoc.jar!/" />
