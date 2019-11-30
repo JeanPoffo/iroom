@@ -4,10 +4,7 @@ import com.br.iroom.model.Filtro;
 import com.br.iroom.model.Postagem;
 import com.br.iroom.model.Salvo;
 import com.br.iroom.model.Usuario;
-import com.br.iroom.view.adapter.PostagemAdapter;
-import com.br.iroom.view.adapter.SalvoAdapter;
 
-import java.util.AbstractQueue;
 import java.util.ArrayList;
 import java.util.List;
 
