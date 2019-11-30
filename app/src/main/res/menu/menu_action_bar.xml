@@ -5,16 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
-<<<<<<< HEAD
-=======
-    <!-- Adicionar Postagem -->
-    <item
-        android:id="@+id/action_item_adicionar"
-        android:icon="@drawable/ic_add"
-        android:title="Adicionar"
-        app:showAsAction="always"/>
-
->>>>>>> 79c757ba65370b1ec1f557cd37c75ebe12f51b96
     <!-- Buscar Postagem -->
     <item
         android:id="@+id/action_item_buscar"
